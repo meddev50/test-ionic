@@ -1,0 +1,96 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ionic Cordova Geolocation & Geocoder Examples
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+
+    <ion-button (click)="getLocationCoordinates()" expand="block">
+      Get Location
+    </ion-button>
+
+    <ion-button (click)="getUniqueDeviceID()" expand="block">
+      Get Device Info
+    </ion-button>
+   
+    <ion-button (click)="callProduce()" expand="block">
+      Produce
+    </ion-button>
+
+    <ion-button (click)="getprevious()" expand="block">
+      getprevious
+    </ion-button>
+
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Location Coordinates</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>
+          Latitude
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{latitude}}</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          Longitude
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{longitude}}</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          Accuracy
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{accuracy}}</ion-badge>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          Altitude
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{altitude}}</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          Altitude Accuracy
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{altitudeAccuracy}}</ion-badge>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          Speed
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{speed}}</ion-badge>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label>
+          Date
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{timestamp | date:'fullDate'}}</ion-badge>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          Time
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{timestamp | date:'fullTime'}}</ion-badge>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label>
+          umei
+        </ion-label>
+        <ion-badge color="danger" slot="end">{{UniqueDeviceID}}</ion-badge>
+      </ion-item>
+
+    </ion-list>
+  </div>
+</ion-content>
