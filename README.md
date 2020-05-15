@@ -1,4 +1,4 @@
 # test-ionic
-cd into the project 
-run npm install 
-ionic serve or ionic lab 
+cd into the project.
+run npm install .
+ionic serve or ionic lab .
